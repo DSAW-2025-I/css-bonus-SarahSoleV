@@ -3,12 +3,13 @@ body {
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            gap: 20px;
             height: 100vh;
         }
+
 .nombre {
     width: 100%;
     text-align: center;
+    margin-top: 5%
     font-size: 20px;
     font-family: Arial, sans-serif;
     margin-bottom: 20px;
@@ -17,6 +18,8 @@ body {
         .box {
             width: 150px;
             height: 150px;
+            margin-left: 10px;
+            margin-right: 10px;
             display: flex;
             justify-content: center;
             align-items: center;
