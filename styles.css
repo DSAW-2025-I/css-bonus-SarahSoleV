@@ -1,0 +1,153 @@
+body {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.nombre {
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 10px; 
+    text-align: center;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Escalera */
+.ladder {
+    background-color: #6592CF;
+}
+.ladder::before, .ladder::after {
+    top: 30px;
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 80%;
+    background-color: #060F55;
+    border-radius: 20px;
+    bottom: 0;
+}
+.ladder::before { left: 30px; }
+.ladder::after { right: 30px; }
+.ladder div {
+    position: absolute;
+    width: 50%;
+    height: 15px;
+    background-color: #060F55;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.ladder .step1 { top: 50px; }
+.ladder .step2 { top: 85px; }
+.ladder .step3 { top: 120px; }
+
+/* Cubito */
+.cross {
+    background-color: #F5D6B4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.center {
+    width: 55px;
+    height: 55px;
+    background-color: #D86F45;
+    position: absolute;
+}
+
+.cross .vertical {
+    width: 23px;
+    height: 95px;
+    background-color: #D86F45;
+    position: absolute;
+}
+
+.cross .horizontal {
+    width: 95px;
+    height: 23px;
+    background-color: #D86F45;
+    position: absolute;
+}
+
+/* Regalo */
+.box3 {
+    background-color: #AC474B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.gift {
+    width: 60px;
+    height: 60px;
+    background-color: #FFFFFF;
+    position: absolute;
+}
+
+.cruz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.cruz .cruzvertical {
+    width: 10px;
+    height: 60px;
+    background-color: #AC474B;
+    position: absolute;
+}
+
+.cruz .cruzhorizontal {
+    width: 60px;
+    height: 10px;
+    background-color: #AC474B;
+    position: absolute;
+}
+
+.ribbon {
+    position: absolute;
+    top: -60px;
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 20px;
+}
+
+.ribbon div {
+    width: 10px;
+    height: 12px;
+    border-radius: 45%;
+    border: 4px solid white; 
+}
+
+.ribbon::before {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 8px;
+    background-color: #FFFFFF;
+    bottom: 0;
+}
